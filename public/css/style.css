@@ -1,18 +1,31 @@
+#search{
+background-color: aqua;
+border-left: none;
+border-color: aqua;
+
+}
+
+#apple, #samsung{ 
+    background-color: grey;
+    color: aliceblue;
+}
+
+input{
+    border-color: rgb(56, 55, 55);
+}
+
 header {
     background-color: #333;
     color: white;
     padding: 10px 0;
-    text-align: center;
+    display: grid;
 }
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -21,6 +34,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffcc00;
 }
+
 
 footer {
     background-color: #333;
