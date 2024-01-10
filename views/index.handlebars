@@ -1,0 +1,25 @@
+
+<head>
+    <title>Home</title>
+    </head>
+<div class="container">
+<div style="background-color: black;margin-bottom:50px" class="intro">
+    <div>
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Get Slick Mobile Phone Accessories</h1>
+    <p>Explore our top quality headphones, airpods, phone cases and more amazing stuff.All our products are from your trusted,favourite brands and come with up to 12 months warranty to
+        ensure your optimal satisfaction. Don't be shy. Scroll down! </p>
+    </div>
+    <img src="mic.jpg" alt="banner image" style="width: 90%;height:100%;margin-left:20px;">
+</div>
+<div class="row">
+   {{#each popularProduct}}
+   <div class="col-sm">
+    <h3>{{this.productName}}</h3>
+    <h4>{{this.price}}</h4>
+    <p>{{this.description}}</p>
+    <button class="btn">Add To Cart</button>
+   </div>
+   {{/each}}
+</div>
+</div>
+
