@@ -176,3 +176,22 @@ a{
     width: 90%;
     margin-left: 5%;
 }
+
+.productBody {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2, p {
+    margin-bottom: 10px;
+}
+
+.similar-products {
+    margin-top: 20px;
+}

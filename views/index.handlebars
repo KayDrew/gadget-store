@@ -11,17 +11,26 @@
     </div>
     <img src="mic.png" alt="banner image" style="width: 90%;height:70%;margin-left:20px;margin-top:20px;">
 </div>
+<form action="/product" method="get">
 <div class="row1">  
    {{#each popularProducts}}
-   <div class="col-sm">
+   <div class="col-sm" onclick="clickBtn()" >
   <div class="product-container">
-    <img class="product-image" src={{this.image}} alt="Product Image">
+    <img class="product-image" src={{this.image}} alt="Product Image" >
     <h4 class="product-name">{{this.productName}}</h4>
     <h5 class="product-price">{{this.price}}</h5>
     <div class="product-description">{{this.rating}}</div>
     <div class="star-rating">⭐⭐⭐⭐⭐</div>
+    <button type="submit" style="display: none;" id="submitBtn"></button>
 </div>   
    {{/each}}
 </div>
 </div>
+</div>
+<script>
+
+    function clickBtn(){
+        document.querySelector("#submitBtn").click();
+    }
+</script>
 

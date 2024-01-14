@@ -15,9 +15,17 @@ export default function appRoutes(){
 
     }
 
+    async function productPage(req,res){
+
+        res.render("product",{
+
+        });
+    }
+
     return{
 
         home,
+        productPage,
     }
 
 }
