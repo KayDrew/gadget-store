@@ -2,23 +2,25 @@
 <head>
     <title>Home</title>
     </head>
-<div class="container">
-<div style="background-color: rgb(21, 20, 20);margin-bottom:50px; box-shadow:3px 3px 4px 4px black" class="intro">
+<div>
+<div style="background-color: rgb(21, 20, 20);margin-bottom:50px;" class="intro">
     <div>
-    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:rgb(246, 162, 36);">Get Slick Mobile Phone Accessories</h1>
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:aqua;">Get Slick Mobile Phone Accessories</h1>
     <p>Explore our top quality headphones, airpods, phone cases and more amazing stuff.All our products are from your trusted,favourite brands and come with up to 12 months warranty to
         ensure your optimal satisfaction. Don't be shy. Scroll down! </p>
     </div>
     <img src="mic.png" alt="banner image" style="width: 90%;height:70%;margin-left:20px;margin-top:20px;">
 </div>
-<div class="row">
-   {{#each popularProduct}}
+<div class="row1">  
+   {{#each popularProducts}}
    <div class="col-sm">
-    <h3>{{this.productName}}</h3>
-    <h4>{{this.price}}</h4>
-    <p>{{this.description}}</p>
-    <button class="btn">Add To Cart</button>
-   </div>
+  <div class="product-container">
+    <img class="product-image" src={{this.image}} alt="Product Image">
+    <h4 class="product-name">{{this.productName}}</h4>
+    <h5 class="product-price">{{this.price}}</h5>
+    <div class="product-description">{{this.rating}}</div>
+    <div class="star-rating">⭐⭐⭐⭐⭐</div>
+</div>   
    {{/each}}
 </div>
 </div>

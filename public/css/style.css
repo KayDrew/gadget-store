@@ -1,3 +1,4 @@
+
 #search{
 background-color: aqua;
 border-left: none;
@@ -6,12 +7,24 @@ border-radius: 5px;
 
 }
 
+
+
 .intro{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    color: #b1adad;
+    color: #d6cece;
     padding: 10px;
     border-radius: 3px;
+    width: 90%;
+    margin: 0 auto;
+  
+}
+
+.row1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .intro div{
@@ -36,7 +49,7 @@ border-radius: 5px;
 
 
 .top-menu a{
-color: rgb(242, 184, 77);
+color: aqua;
 font-weight: bold;
 margin-left: 10px;
 
@@ -90,23 +103,76 @@ footer {
     padding: 20px 0;
     text-align: center;
     font-weight:15px;
+    width: 100%;
 }
 .contact-info {
     margin-bottom: 15px;
 }
+
 .social-media {
     font-size: 24px;
 }
+
 .social-media a {
     color: rgb(34, 34, 34);
     text-decoration: none;
     margin: 0 10px;
 }
+
 .social-media a:hover {
     color: black;
 }
+
 a{
     text-decoration: none;
 }
 
     
+.product-container {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    margin: 20px;
+    border-radius: 8px;
+    width: 90%;
+    text-align: center;
+   
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-price {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.product-description {
+    margin-top: 10px;
+    color: #555;
+}
+
+.star-rating {
+    margin-top: 10px;
+    color: gold;
+}
+
+.add-to-cart-btn {
+    background-color: rgb(53, 53, 217);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 5%;
+}

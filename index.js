@@ -18,7 +18,7 @@ app.set('views', './views');
 app.use(express.static('public'));
 app.use(express.static('images'));
 app.use(session({
-    secret: process.env.secret,
+    secret: process.env.secret|| "Gadget Store",
     resave: false,
     saveInitialized: false
   }));
