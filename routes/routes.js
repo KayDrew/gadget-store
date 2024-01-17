@@ -22,10 +22,21 @@ export default function appRoutes(){
         });
     }
 
+    async function contactUs(req,res){
+
+        res.render("contact",{
+
+        });
+    }
+
+
+
+
     return{
 
         home,
         productPage,
+        contactUs
     }
 
 }

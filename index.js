@@ -34,6 +34,7 @@ const route= routes();
 
 app.get("/",route.home);
 app.get("/product",route.productPage);
+app.get("/contact",route.contactUs);
 
 const PORT= process.env.PORT||5432;
 app.listen(PORT,function(){
