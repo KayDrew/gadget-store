@@ -4,6 +4,7 @@ background-color: aqua;
 border-left: none;
 border-color: aqua;
 border-radius: 5px;
+max-width: 80%;
 
 }
 
@@ -12,7 +13,7 @@ border-radius: 5px;
 .intro{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    color: #d6cece;
+    color: #d4d5df;
     padding: 10px;
     border-radius: 3px;
     width: 90%;
@@ -49,9 +50,10 @@ border-radius: 5px;
 
 
 .top-menu a{
-color: aqua;
-font-weight: bold;
+color: rgb(96, 93, 93);
 margin-left: 10px;
+font-size: large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 
 }
@@ -72,13 +74,14 @@ header {
     padding: 10px 0;
     display: grid;
     padding-bottom: -20px;
-    background-color: rgb(18, 17, 17);
+    background-color: whitesmoke;
     margin-bottom: 30px;
 }
 
 #logo{
     margin-left: -35px;
     margin-top: -20px;
+    width: 200px;
 }
 
 nav ul {
@@ -136,13 +139,16 @@ a{
     border-radius: 8px;
     width: 90%;
     text-align: center;
+    background-color: rgb(249, 249, 249);
    
 }
 
-.product-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+
+#prodImg{
+    width:250px;
+    filter:contrast(1.1);
+    filter:opacity(1.5);
+ 
 }
 
 .product-name {
@@ -228,4 +234,36 @@ a{
         .product-container h2, .product-container p {
             margin: 0;
         }
+
+#contactUs{
+    display: grid;
+    width: 65%;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    background-color: rgb(62, 60, 60);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1.2px 1.2px black;
+}
+        #name,  #email, #message, #number{
+            width: 90%;
+            border-radius: 5px;
+            border: none;
+            background-color: grey;
+        }
+
+        #send{
+            color: rgb(66, 64, 64);
+            font-weight: bold;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 90%;
+            font-size: larger;
+            background-color: orange;
+            box-shadow: 1px 1px 1.3px 1.3px orange;
+        }
+
+        
  
