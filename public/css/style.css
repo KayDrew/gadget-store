@@ -38,12 +38,15 @@ max-width: 80%;
        
     }
 
-
+.top-menu{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
 
 .top-nav{
-    float: right;
    margin-right: 3px;
    margin-top: 20px;
+
     
 }
 
@@ -245,15 +248,17 @@ a{
     border-radius: 10px;
     box-shadow: 1px 1px 1.2px 1.2px black;
 }
+
+
         #name,  #email, #message, #number{
             width: 90%;
             border-radius: 5px;
             border: none;
-            background-color: grey;
+            background-color: rgb(149, 155, 155);
         }
 
         #send{
-            color: rgb(66, 64, 64);
+            color: rgb(255, 246, 246);
             font-weight: bold;
             padding: 10px 15px;
             border: none;
@@ -261,8 +266,8 @@ a{
             cursor: pointer;
             width: 90%;
             font-size: larger;
-            background-color: orange;
-            box-shadow: 1px 1px 1.3px 1.3px orange;
+            background-color: orangered;
+            box-shadow: 1px 1px 1.3px 1.3px orangered;
         }
 
         
