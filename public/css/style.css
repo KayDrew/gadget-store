@@ -270,5 +270,28 @@ a{
             box-shadow: 1px 1px 1.3px 1.3px orangered;
         }
 
+        ::placeholder{
+            color: #221e1e;
+        }
+
+        .instock{
+            color: #108916;
+            font-weight: bold;
+           
+        }
+
+        .cart{
+        }
+
+        .cartItems{
+            
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    margin: 20px;
+    border-radius: 8px;
+    background-color: rgb(249, 249, 249); 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+        }
         
  

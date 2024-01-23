@@ -30,13 +30,29 @@ export default function appRoutes(){
     }
 
 
+    async function cart(req,res){
+
+        let cartItems=[{productName:"Samsung Headset Max Bass XR",
+        price:"R2799.00",image:"/samsung/samsung1.png",qty:4,
+        instock:"In Stock",color:"white"}];
+        res.render("cart",{cartItems
+
+        });
+    }
+
+    async function checkout(req,res){
+
+        res.render("checkout");
+    }
 
 
     return{
 
         home,
         productPage,
-        contactUs
+        contactUs,
+        cart,
+        checkout
     }
 
 }

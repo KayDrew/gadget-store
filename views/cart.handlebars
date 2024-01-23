@@ -1,0 +1,27 @@
+<head>
+    <title>Cart</title>
+</head>
+<body>
+
+        <h2>Subtotal <span>$120.00</span></h2>
+       <form action="/checkout" method="get"> <button type="submit">Proceed to checkout</button></form>
+
+<div class="cartItems">
+    {{#each cartItems}}
+  <div>
+        <img src={{this.image}} alt="product iamge"/>
+        <form>
+        <button type="submit">+</button><span>{{this.qty}}</span><button type="submit">-</button>
+        </form>
+        </div>
+     <div>
+            <h4>{{this.productName}}</h4>
+            <h3>{{this.price}}</h3>
+            <p class="instock">{{this.instock}}</p>
+            <h5>{{this.color}}</h5>
+        
+           {{/each}}
+           </div>
+     </div>
+ 
+</body>
