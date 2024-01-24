@@ -46,13 +46,25 @@ export default function appRoutes(){
     }
 
 
+    async function history(req,res){
+        res.render("history");
+
+    }
+
+    async function account(req,res){
+        res.render("account");
+    }
+
+
     return{
 
         home,
         productPage,
         contactUs,
         cart,
-        checkout
+        checkout,
+        history,
+        account
     }
 
 }

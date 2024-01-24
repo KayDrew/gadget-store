@@ -37,6 +37,9 @@ app.get("/product",route.productPage);
 app.get("/contact",route.contactUs);
 app.get("/cart",route.cart);
 app.get("/checkout",route.checkout);
+app.get("/history",route.history);
+app.get("/account",route.account);
+
 
 const PORT= process.env.PORT||5432;
 app.listen(PORT,function(){
