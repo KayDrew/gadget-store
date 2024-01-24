@@ -1,27 +1,38 @@
 <head>
     <title>Cart</title>
 </head>
-<body>
 
-        <h2>Subtotal <span>$120.00</span></h2>
-       <form action="/checkout" method="get"> <button type="submit">Proceed to checkout</button></form>
+<body style="background-color: rgb(244, 244, 251)">
+<div  class="cart">
 
-<div class="cartItems">
-    {{#each cartItems}}
-  <div>
-        <img src={{this.image}} alt="product iamge"/>
-        <form>
-        <button type="submit">+</button><span>{{this.qty}}</span><button type="submit">-</button>
-        </form>
+    <div>
+
+        <h2 style="text-align: center;margin-bottom:15px">Subtotal <span>$120.00</span></h2>
+        <form action="/checkout" method="get"> <button type="submit" id="checkout">Proceed to checkout</button></form>
+   <div class="cartItems">
+            {{#each cartItems}}
+            <div>
+                <img src={{this.image}} alt="product iamge" />
+            </div>
+
+            <div>
+                <h4>{{this.productName}}</h4>
+                <h3>{{this.price}}</h3>
+                <p class="instock">{{this.instock}}</p>
+                <h5>{{this.color}}</h5>
+                   <form>
+                    <button type="submit" class="cartBtn">+</button><span class="cartSpan">{{this.qty}}</span><button type="submit"  class="cartBtn">-</button>
+                </form>
+            </div>
+             
+                
+            {{/each}}
         </div>
-     <div>
-            <h4>{{this.productName}}</h4>
-            <h3>{{this.price}}</h3>
-            <p class="instock">{{this.instock}}</p>
-            <h5>{{this.color}}</h5>
-        
-           {{/each}}
-           </div>
-     </div>
- 
-</body>
+     
+    </div>
+
+    <div class="cartSimilar">
+        <h2>hello</h2>
+    </div>
+
+</div></body>

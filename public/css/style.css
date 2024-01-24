@@ -281,6 +281,9 @@ a{
         }
 
         .cart{
+
+            display: grid;
+            grid-template-columns: 2fr 1fr;
         }
 
         .cartItems{
@@ -292,6 +295,25 @@ a{
     background-color: rgb(249, 249, 249); 
     display: grid;
     grid-template-columns: 1fr 2fr;
+    
+        }
+
+        #checkout{
+            background-color: orangered;
+            border: none;
+            color: white;
+            border-radius: 7px;
+            width: 90%;
+            padding: 4px;
+            margin-left: 5%;
+            font-size: larger;
         }
         
+        .cartBtn, .cartSpan{
+            padding: 10px;
+            border-radius: 4px;
+            background-color: whitesmoke;
+            border: none;
+
+        }
  
