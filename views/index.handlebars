@@ -4,27 +4,33 @@
     </head>
 
 <body style="background-color: rgb(244, 244, 251);">
+    <div id="intro" style="background-color: navy; color:aliceblue">
+        <h1>Our Store</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eius officia dolorem quo tempora veniam, veritatis, 
+            ullam facere omnis voluptatum laboriosam asperiores
+             voluptatem illum harum accusamus recusandae architecto autem aspernatur!</p>
+            <div style="display: inline-block;">
+                <button>tip</button>
+                <button>tip</button>
+            </div>
+    </div>
 
 <form action="/product" method="get">
 <div class="row1">  
    {{#each popularProducts}}
-   <div class="col-sm" onclick="clickBtn()" >
+   <div >
   <div class="product-container">
     <img class="product-image" src={{this.image}} alt="Product Image" >
     <h4 class="product-name">{{this.productName}}</h4>
     <h5 class="product-price">{{this.price}}</h5>
     <div class="product-description">{{this.rating}}</div>
     <div class="star-rating">⭐⭐⭐⭐⭐</div>
-    <button type="submit" style="display: none;" id="submitBtn"></button>
+     <button type="submit" class="addBtn">Add to Cart</button>
 </div>   
    {{/each}}
 </div>
 </div>
+</form>
 </body>
-<script>
 
-    function clickBtn(){
-        document.querySelector("#submitBtn").click();
-    }
-</script>
 

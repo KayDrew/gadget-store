@@ -1,6 +1,8 @@
 
+
+
 #searchBtn{
-background-color: aqua;
+background-color: orangered;
 border-left: none;
 border-radius: 5px;
 height: 31px;
@@ -8,23 +10,36 @@ max-width: 80%;
 border: none;
 color: white;
 font-size: larger;
+position: absolute;
+z-index: 1;
+
+}
 
 
+#searchField{
+    position: relative;
+    border-color: #555;
+    border-radius: 5px;
+    width: 90%;
+    padding: 7px;
+    margin-right: -32px;
 }
 
 .search{
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    
 }
 
 
 
-.intro{
+#intro{
     display: grid;
-    grid-template-columns: 2fr 1fr;
     color: #d4d5df;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
     width: 90%;
     margin: 0 auto;
   
@@ -113,7 +128,7 @@ nav ul li a:hover {
 
 
 footer {
-    background-color:aqua;
+    background-color:rgb(232, 243, 243);
     color: rgb(34, 34, 34);
     padding: 20px 0;
     text-align: center;
@@ -349,12 +364,16 @@ padding: 9px;
 .navIcons{
     float: right;
     padding-right: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+   
 }
 
 .navIcons a{
     margin-left: 18px;
     font-size: 20px;
-    color: rgb(236, 71, 11);
+    color: rgb(47, 47, 47);
+    
 }
 
 
@@ -362,7 +381,22 @@ padding: 9px;
     display: none;
 }
 
-@media screen and (min-width:600px){
+.dropdownContent a{
+    display: block;   
+    color: rgb(47, 47, 47);
+    margin-bottom: 10px;
+  }
+
+   a:visited{
+    color: navy;
+  }
+
+  a:hover{
+    background-color: rgb(63, 62, 59);
+    color: aliceblue;
+  }
+
+@media screen and (min-width:800px){
 
 
     #userIcon{
@@ -374,10 +408,46 @@ padding: 9px;
         display: block;
     }
 
+    
+
     #dropdownBtn{
         display: none;
     }
-  
+
+    .dropdownContent{
+        display: inline-block;
+        position:unset;
+        z-index:unset;
+        background-color: unset;
+        box-shadow: unset;
+        padding-top: 49px;
+       
+    }
+
+    .dropdownContent a{
+        display: inline-block;   
+        color: rgb(47, 47, 47);
+        margin-bottom: 0px;
+        margin-left: 18px;
+      }
+
+  .search{
+    width: 80%;
+    margin-left: 78%;
+    padding-top: 30px;
+    
+
+}
+
+#hide{
+    display: none;
+}
+
+.splitNav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+}
     
 }
 
