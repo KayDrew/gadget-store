@@ -1,11 +1,20 @@
 
-#search{
+#searchBtn{
 background-color: aqua;
 border-left: none;
-border-color: aqua;
 border-radius: 5px;
+height: 31px;
 max-width: 80%;
+border: none;
+color: white;
+font-size: larger;
 
+
+}
+
+.search{
+    width: 80%;
+    margin: 0 auto;
 }
 
 
@@ -317,3 +326,58 @@ a{
 
         }
  
+
+        
+ 
+#dropdownBtn{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    border: none;
+}
+
+.dropdownContent{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0.5px 0.6px 0.7px 0.8px rgb(226, 224, 224);
+background-color: #f9f9f9;
+min-width: 160px;
+padding: 9px;
+}
+
+.navIcons{
+    float: right;
+    padding-right: 10px;
+}
+
+.navIcons a{
+    margin-left: 18px;
+    font-size: 20px;
+    color: rgb(236, 71, 11);
+}
+
+
+.extraLinks{
+    display: none;
+}
+
+@media screen and (min-width:600px){
+
+
+    #userIcon{
+        display: none;
+
+    }
+
+    .navLinks,.extraLinks{
+        display: block;
+    }
+
+    #dropdownBtn{
+        display: none;
+    }
+  
+    
+}
+
