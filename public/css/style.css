@@ -3,14 +3,17 @@
 #searchBtn{
 background-color: rgb(255, 181, 43);
 border-left: none;
-border-radius: 4px;
+border-radius: 3px;
 height: 31px;
 max-width: 80%;
 border: none;
-color: rgb(99, 99, 99);
+color: white;
 font-size: larger;
 position: absolute;
 z-index: 1;
+margin-left: -5px;
+height:30px;
+margin-top: 1.5px;
 
 }
 
@@ -23,6 +26,7 @@ z-index: 1;
     padding: 7px;
     margin-left: -23px;
     margin-bottom: 30px;
+    margin-top: 2px;
 }
 
 .search{
@@ -65,16 +69,6 @@ z-index: 1;
 }
 
 
-
-.top-menu a{
-color: rgb(135, 37, 37);
-margin-left: 10px;
-font-size: large;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
-}
-
 #apple, #samsung{ 
     background-color: grey;
     color: aliceblue;
@@ -88,9 +82,9 @@ input{
 header {
  
     color: white;
-    background-color: whitesmoke;
+    background-color: orange;
     margin-bottom: 30px;  
-    box-shadow: 0 4px 8px rgba(164, 163, 163, 0.25);
+    box-shadow: 0 4px 8px rgba(114, 114, 114, 0.25);
     width: 100%;
     padding-top: 10px;
     display: grid;
@@ -117,32 +111,28 @@ nav ul li a:hover {
 
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     background-color:rgb(215, 220, 220);
     color: rgb(34, 34, 34);
-    padding-left: 40px;
+    padding-left: 20px;
     width: 100%;
     margin-top: 40px;
     font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footerDiv{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
 }
 .contact-info {
     margin-bottom: 15px;
 }
 
-.social-media {
-    font-size: 18px;
-}
 
-.social-media a {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.social-media a:hover {
-    color: black;
-}
 
 a{
     text-decoration: none;
@@ -339,6 +329,7 @@ a{
     display: inline-block;
     font-size: 20px;
     border: none;
+    background-color:rgb(232, 237, 237);
 }
 
 .dropdownContent{
@@ -364,8 +355,8 @@ padding: 9px;
 .navIcons a{
     margin-left: 18px;
     font-size: 20px;
-    color: rgb(120, 120, 122);
-    font-weight:bold;
+    color: rgb(255, 252, 252);
+    
     
 }
 
@@ -417,10 +408,9 @@ padding: 9px;
 
     .dropdownContent a{
         display: inline-block;   
-        color: rgb(94, 94, 95);
+        color: rgb(76, 76, 78);
         margin-bottom: 0px;
-        margin-left: 18px;
-        font-weight: bold;
+        margin-left: 14px;
       }
 
   .search{
@@ -446,7 +436,8 @@ padding: 9px;
 }
 
 #intro p{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:17px;
     margin-bottom:20px;
 }
@@ -464,7 +455,10 @@ header{
 
 footer, .footernav a{
     font-size: 14px;
+  
 }
+
+
 
 
     
@@ -478,7 +472,6 @@ footer, .footernav a{
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
-    border-radius: 9px;
     width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -487,14 +480,13 @@ footer, .footernav a{
 }
 
 #introBtn1{
-    background-color: rgb(249, 210, 138);
-    color: rgb(5, 5, 168);
+    background-color: purple;
+    color: white;
     padding: 10px;
     width: 110px;
     border: none;
     border-radius: 7px;
     border: 1px solid rgb(247, 247, 255);
-    font-weight: bolder;
     box-shadow: 0.5px 0.5px 0.7px 0.7px rgb(0, 128, 255);
     margin-right: 20px;
 }
@@ -502,7 +494,7 @@ footer, .footernav a{
 
 #introBtn2{
     background-color:rgb(25, 25, 104);
-    color: rgb(246, 197, 105);
+    color: pink;
     padding: 10px;
     width: 110px;
     border: 1px solid rgb(225, 232, 237);
@@ -519,7 +511,7 @@ button{
 #intro h1{
     font-family:sans-serif;
     font-weight:lighter;
-    color: orange;
+    color: pink;
 }
 
 #intro p{
@@ -530,21 +522,47 @@ button{
 }
 
 .splitNav{
-    background-color:rgb(215, 220, 220);
+    background-color:rgb(235, 239, 239);
     max-height:70px ;
    
 }
 
-.footernav a{
+.a{
 
     color:black;
     display: block;
     font-size: 12px;
     margin-bottom: 10px;
+    margin-left: 15px;
 
 }
 
 .footernav{
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+
+
+.social-media h4{
+    margin-left: 14px;
+    font-size: 13px;
+}
+
+
+.social-media a {
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    margin-left:10px;
+    font-size: 16px;
+}
+
+.social-media a:hover {
+    color: black;
+}
+
+.rights{
+    font-size: 11px;
+    font-weight: bold;
+    
 }

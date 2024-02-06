@@ -7,13 +7,13 @@
        <link rel="stylesheet" href="./fonts.min.css" />
        <script src="./js/fonts.min.js"></script>
 </head>
-<body>
+<body style="background-color: rgb(255, 252, 252);">
 <header>
   <nav>  
     <div class="navIcons">
         <div class="extraLinks">
       <a href="account" target="_blank" style="font-size: medium;">Account</a>
-      <a href="history" target="_blank" style="font-size: medium;">Returns & Orders</a>
+      <a href="history" target="_blank" style="font-size: medium;">Support</a>
     </div>
     <div>
       <a href="account" target="_blank" ><i class="fa fa-user" id="userIcon"></i></a>   
@@ -26,8 +26,7 @@
       <button type="button" id="dropdownBtn">  <i class="fa fa-bars" id="dropdown"></i></button>
     <div class="dropdownContent">
       <a href="/" target="_blank">Home</a>
-      <a href="product" target="_blank">Products</a>
-      <a href="history" target="_blank" id="hide">Returns & History</a>
+      <a href="product" target="_blank">services</a>
       <a href="about" target="_blank">About</a>
       <a href="contact" target="_blank">Contact Us</a>
       <a href="about" target="_blank">faq</a>
@@ -73,15 +72,17 @@ else{
     toggleBtn.addEventListener("click",showMenu);
 </script>
     <footer>
+      <div class="footerDiv">
         <div class="contact-info">
-            <p>Address: 1234 Gadget Street, Cityville, State, ZIP</p>
-            <p>Email: info@slickgadgets.com</p>
-            <p>Telephone: +27 6585 51062</p>
+            <p> 1234 Gadget Street<br> Dennilton<br>Limpopo<br> 1030</p>
+            <p><i class="fa fa-envelope"></i> info@slickgadgets.com</p>
+            <p><i class="fa fa-phone"></i> +27 6585 51062</p>
         </div>
         <div class="footernav">
-          <a href="home" target="_blank">Home</a>
-          <a href="terms" target="_blank">Temrs & Conditions</a>
-          <a href="about"  target="_blank">About Us</a>
+          <a href="home" target="_blank" class="a">Home</a>  
+          <a href="services" target="_blank" class="a">services</a>
+          <a href="terms" target="_blank" class="a">Temrs & Conditions</a>
+          <a href="about"  target="_blank" class="a">About Us</a>
         </div>
         <div class="social-media">
             <h4>Follow Us</h4>
@@ -90,10 +91,12 @@ else{
             <a href="https://www.twitter.com/slickgadgets" target="_blank" rel="noopener noreferrer"><i
                     class="fa-brands fa-twitter"></i></a>
             <a href="https://www.instagram.com/slickgadgets" target="_blank" rel="noopener noreferrer"><i
-                    class="fa-brands fa-square-instagram"></i></a>
-            <!-- Add more social media links as needed -->
+                    class="fa-brands fa-square-instagram"></i></a>   
         </div>
-        <p style="font-size: small;margin-top:20px">&copy; 2024 Slick Gadgets. All Rights Reserved.</p>
+          </div>
+        <div class="rights">
+        <p style="margin-top:10px;text-align:center">&copy; 2024 Belo Technologies. All Rights Reserved.</p>
+          </div>
     </footer>
 
 </html>
