@@ -1,10 +1,9 @@
 
 
-
 #searchBtn{
-background-color: orangered;
+background-color: orange;
 border-left: none;
-border-radius: 5px;
+border-radius: 4px;
 height: 31px;
 max-width: 80%;
 border: none;
@@ -18,19 +17,18 @@ z-index: 1;
 
 #searchField{
     position: relative;
-    border-color: #555;
+    border:none;
     border-radius: 5px;
     width: 90%;
     padding: 7px;
-    margin-right: -32px;
-    margin-bottom: 10px;
+    margin-left: -23px;
+    margin-bottom: 30px;
 }
 
 .search{
     width: 100%;
     margin-left: 30px;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    
     
 }
 
@@ -69,7 +67,7 @@ z-index: 1;
 
 
 .top-menu a{
-color: rgb(96, 93, 93);
+color: rgb(135, 37, 37);
 margin-left: 10px;
 font-size: large;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -95,6 +93,8 @@ header {
     box-shadow: 0 4px 8px rgba(164, 163, 163, 0.25);
     width: 100%;
     padding-top: 10px;
+    display: grid;
+    
     
 }
 
@@ -110,11 +110,7 @@ nav ul {
     margin: 0;
 }
 
-nav ul li a {
-    color:rgb(58, 55, 55);
-    font-weight: bold;
-    
-}
+
 nav ul li a:hover {
     color: rgb(23, 22, 22);
 }
@@ -288,7 +284,7 @@ a{
         }
 
         ::placeholder{
-            color: #221e1e;
+            color: #817676;
         }
 
         .instock{
@@ -354,6 +350,8 @@ min-width: 160px;
 padding: 9px;
 }
 
+
+
 .navIcons{
     float: right;
     padding-right: 10px;
@@ -365,7 +363,8 @@ padding: 9px;
 .navIcons a{
     margin-left: 18px;
     font-size: 20px;
-    color: rgb(47, 47, 47);
+    color: rgb(120, 120, 122);
+    font-weight:bold;
     
 }
 
@@ -376,13 +375,11 @@ padding: 9px;
 
 .dropdownContent a{
     display: block;   
-    color: rgb(47, 47, 47);
+    color: rgb(24, 23, 23);
     margin-bottom: 10px;
   }
 
-   a:visited{
-    color: navy;
-  }
+
 
   a:hover{
     background-color: rgb(63, 62, 59);
@@ -413,23 +410,22 @@ padding: 9px;
         z-index:unset;
         background-color: unset;
         box-shadow: unset;
-        padding-top: 49px;
-       
+        padding-top: 20px;
+       padding-bottom: -20px;
     }
 
     .dropdownContent a{
         display: inline-block;   
-        color: rgb(47, 47, 47);
+        color: rgb(94, 94, 95);
         margin-bottom: 0px;
         margin-left: 18px;
+        font-weight: bold;
       }
 
   .search{
     width: 80%;
-    margin-left: 78%;
-    padding-top: 30px;
-    
-
+    margin-left: 20%;
+    margin-top: 20px;
 }
 
 #hide{
@@ -439,8 +435,32 @@ padding: 9px;
 .splitNav{
     display: grid;
     grid-template-columns: 1fr 1fr;
- 
+  
+
 }
+
+#introBtn1, #introBtn2{
+    width: 80px;
+    padding: 14px;
+}
+
+#intro p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:17px;
+    margin-bottom:20px;
+}
+
+
+#intro h1{
+    font-size:40px;
+}
+
+header{
+    max-height: 100px;
+    margin-bottom: 50px;
+}
+
+
     
 }
 
@@ -461,26 +481,50 @@ padding: 9px;
 }
 
 #introBtn1{
-    background-color: rgb(204, 225, 240);
-    color: rgb(37, 37, 176);
-    padding: 16px;
-    width: 120px;
+    background-color: rgb(249, 210, 138);
+    color: rgb(5, 5, 168);
+    padding: 10px;
+    width: 110px;
     border: none;
     border-radius: 7px;
     border: 1px solid rgb(247, 247, 255);
-    font-weight: bold;
-    box-shadow: 0.5px 0.5px 0.7px 0.7px rgb(243, 243, 244);
+    font-weight: bolder;
+    box-shadow: 0.5px 0.5px 0.7px 0.7px rgb(0, 128, 255);
     margin-right: 20px;
 }
 
 
 #introBtn2{
-    background-color:rgb(7, 7, 148);
-    color: rgb(225, 232, 237);
-    padding: 16px;
-    width: 120px;
+    background-color:rgb(25, 25, 104);
+    color: rgb(246, 197, 105);
+    padding: 10px;
+    width: 110px;
     border: 1px solid rgb(225, 232, 237);
     border-radius: 7px;
-    box-shadow: 0.5px 0.5px 0.7px 0.7px rgb(192, 219, 238);
+    box-shadow: 0.5px 0.5px 0.7px 0.7px rgb(255, 189, 65);
 }
 
+
+button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#intro h1{
+    font-family:sans-serif;
+    font-weight:lighter;
+    color: orange;
+}
+
+#intro p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:0.5px;
+    font-size:15px;
+    margin-bottom:30px
+}
+
+.splitNav{
+      background-color: rgb(234, 234, 236);
+    max-height:70px ;
+   
+}
