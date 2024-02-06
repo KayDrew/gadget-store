@@ -1,13 +1,13 @@
 
 
 #searchBtn{
-background-color: orange;
+background-color: rgb(255, 181, 43);
 border-left: none;
 border-radius: 4px;
 height: 31px;
 max-width: 80%;
 border: none;
-color: white;
+color: rgb(99, 99, 99);
 font-size: larger;
 position: absolute;
 z-index: 1;
@@ -117,20 +117,21 @@ nav ul li a:hover {
 
 
 footer {
-    background-color:rgb(232, 243, 243);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:rgb(215, 220, 220);
     color: rgb(34, 34, 34);
-    padding: 20px 0;
-    text-align: center;
-    font-weight:15px;
+    padding-left: 40px;
     width: 100%;
     margin-top: 40px;
+    font-size: 14px;
 }
 .contact-info {
     margin-bottom: 15px;
 }
 
 .social-media {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .social-media a {
@@ -524,7 +525,21 @@ button{
 }
 
 .splitNav{
-      background-color: rgb(234, 234, 236);
+      background-color: rgb(240, 231, 214);
     max-height:70px ;
    
+}
+
+.footernav a{
+
+    color:black;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+
+.footernav{
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
