@@ -124,7 +124,7 @@ footer {
     padding-left: 40px;
     width: 100%;
     margin-top: 40px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .contact-info {
     margin-bottom: 15px;
@@ -462,6 +462,11 @@ header{
 }
 
 
+footer, .footernav a{
+    font-size: 14px;
+}
+
+
     
 }
 
@@ -525,7 +530,7 @@ button{
 }
 
 .splitNav{
-      background-color: rgb(240, 231, 214);
+    background-color:rgb(215, 220, 220);
     max-height:70px ;
    
 }
@@ -534,7 +539,7 @@ button{
 
     color:black;
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 10px;
 
 }
